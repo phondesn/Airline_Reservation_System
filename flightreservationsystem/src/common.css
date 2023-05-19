@@ -1,0 +1,65 @@
+.photo{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+.container{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+
+/* .content{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 15px;
+} */
+
+.content{
+    margin: 20px;
+}
+
+.registerTable{
+    width: 400px
+}
+
+.myHeader{
+    height: 100px;
+    width: 100%;
+    background-color: orangered;
+}
+
+.myFooter{
+    height: 100px;
+    width: 100%;
+    background-color: green;
+}
+
+.backgroundHomeImage
+{
+    filter:saturate(85%);
+    height: 280px;
+}
+
+.homeInputBoxes
+{
+    background-color: #41B3A3;
+    color: white;
+    text-decoration-color: white;
+    text-emphasis-color: white;
+}
+
+.required
+{
+    color: "red";
+}
+
+.asdas
+{
+    color:lightcoral;
+}

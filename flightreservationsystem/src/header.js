@@ -1,0 +1,56 @@
+import React from 'react';
+import {
+  MDBContainer,
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBIcon
+} from 'mdb-react-ui-kit';
+import Fab from '@mui/material/Fab';
+import { Link } from 'react-router-dom';
+
+export default function Header() {
+  return (
+    <>
+      <MDBNavbar light style={{ backgroundColor: '#41B3A3' }}>
+        <MDBContainer fluid>
+          <MDBNavbarBrand href='#'>
+            <img
+              src='https://careers.udaan.com/images/logo.png'
+              height='80'
+              alt='udaanair'
+              loading='lazy'
+            />
+            <b class="fs-1">Udaan Air</b>
+          </MDBNavbarBrand>
+          <MDBNavbarBrand>
+              <Link to={"/home"}>
+                <Fab variant="extended" style={{backgroundColor:'#05386B', color:"white"}}>
+                  Home
+                </Fab>
+              </Link>{"  "}
+              <Link to={"/aboutus"}>
+                <Fab variant="extended" style={{backgroundColor:'#05386B', color:"white"}}>
+                  About Us
+                </Fab>
+              </Link>{"  "}
+              <Link to={"/contact"}>
+                <Fab variant="extended" style={{backgroundColor:'#05386B', color:"white"}}>
+                  Contact
+                </Fab>
+              </Link>{"  "}
+              <Link to={"/signin"}>
+                <Fab variant="extended" style={{backgroundColor:'#05386B', color:"white"}}>
+                  SignIN/Register
+                </Fab>
+              </Link>{"  "}
+              <Link to={"/home"}>
+                <Fab variant="extended" style={{backgroundColor:'#05386B', color:"white"}}>
+                  IND/ENG
+                </Fab>
+              </Link>
+          </MDBNavbarBrand>
+        </MDBContainer>
+      </MDBNavbar>
+    </>
+  );
+}
